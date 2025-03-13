@@ -13,23 +13,26 @@ export default function About() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </h1>
         </div>
-        <div className=" p-4 px-8 border-[2px] space-y-4">
-          <h1 className="text-[35px] leading-[40px] font-bold">
-            We are branding strategy service from 2001 for our customers.
-          </h1>
-          <h1>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
-          </h1>
-          <ul className="list-disc">
-            <li>Creative Deaign</li>
-            <li>Creative Deaign</li>
-            <li>Creative Deaign</li>
-            <li>Creative Deaign</li>
-            <li>Creative Deaign</li>
-          </ul>
+        <div className="px-8 md:px-12 lg:px-16">
+          {" "}
+          <div className="p-4 px-8 border-[2px] space-y-4 ">
+            <h1 className="text-[35px] leading-[40px] font-bold text-center">
+              We are branding strategy service from 2001 for our customers.
+            </h1>
+            <h1>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </h1>
+            <ul className="list-disc">
+              <li>Creative Deaign</li>
+              <li>Creative Deaign</li>
+              <li>Creative Deaign</li>
+              <li>Creative Deaign</li>
+              <li>Creative Deaign</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>
