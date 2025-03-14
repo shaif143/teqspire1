@@ -23,7 +23,7 @@ export default function App() {
         </div>
         <div id="services" >
 
-          <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+          <div>
             <Particles
               particleColors={['#ffffff', '#ffffff']}
               particleCount={200}
