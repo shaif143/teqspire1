@@ -18,7 +18,7 @@ export default function Services() {
 
   return (
     <div className="relative w-full h-screen"> {/* Set height to full screen */}
-      <div>
+      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
             <Particles
               particleColors={['#ffffff', '#ffffff']}
               particleCount={200}
