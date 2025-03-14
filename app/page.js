@@ -22,7 +22,7 @@ export default function App() {
           <Project />
         </div>
         <div id="services" className="bg-[#FFFF]">
-          <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+          
           <Particles
             particleColors={['#ffffff', '#ffffff']}
             particleCount={200}
@@ -34,7 +34,7 @@ export default function App() {
             disableRotation={false}
           />
           <Services />
-        </div>
+        
         </div> 
         
 
