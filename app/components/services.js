@@ -16,20 +16,18 @@ export default function Services() {
   };
 
   return (
-    <div className="relative w-full h-screen"> {/* Set height to full screen */}
-      {/* Particle Background */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
+    <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <Particles
+      particleColors={['#ffffff', '#ffffff']}
+      particleCount={200}
+      particleSpread={10}
+      speed={0.1}
+      particleBaseSize={100}
+      moveParticlesOnHover={true}
+      alphaParticles={false}
+      disableRotation={false}
+    />
+    
 
       {/* Content */}
       <div className="relative py-2 p-5">
