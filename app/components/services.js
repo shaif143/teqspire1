@@ -18,7 +18,6 @@ export default function Services() {
   return (
     <div className="relative w-full h-screen"> {/* Set height to full screen */}
       
-
       {/* Content */}
       <div className="relative py-2 p-5">
         <div className="py-6">
