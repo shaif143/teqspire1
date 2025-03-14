@@ -187,46 +187,24 @@ const Particles = ({
       }
 
       if (!disableRotation) {
-        particles.rotation.x = Math.sin(elapsed * 0.0002) * 0.1;
-        particles.rotation.y = Math.cos(elapsed * 0.0005) * 0.15;
-        particles.rotation.z += 0.01 * speed;
+        particles.rotation.x += 0.0005;
+        particles.rotation.y += 0.0005;
       }
 
-      renderer.render({ scene: particles, camera });
+      renderer.render({ camera, scene: particles });
     };
 
-    animationFrameId = requestAnimationFrame(update);
+    update(0);
 
     return () => {
-      window.removeEventListener("resize", resize);
       if (moveParticlesOnHover) {
         container.removeEventListener("mousemove", handleMouseMove);
       }
       cancelAnimationFrame(animationFrameId);
-      if (container.contains(gl.canvas)) {
-        container.removeChild(gl.canvas);
-      }
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [
-    particleCount,
-    particleSpread,
-    speed,
-    moveParticlesOnHover,
-    particleHoverFactor,
-    alphaParticles,
-    particleBaseSize,
-    sizeRandomness,
-    cameraDistance,
-    disableRotation,
-  ]);
+  }, []);
 
-  return (
-    <div
-      ref={containerRef}
-      className={`relative w-full h-full ${className}`}
-    />
-  );
+  return <div ref={containerRef} className={`absolute top-0 left-0 w-full h-full ${className}`} />;
 };
 
 export default Particles;
