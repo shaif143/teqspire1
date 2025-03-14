@@ -21,7 +21,7 @@ export default function App() {
         <div id="projects">
           <Project />
         </div>
-        <div id="services" >
+        <div id="services" className="bg-black">
 
           <div className="bg-[#0000]">
             <Particles
