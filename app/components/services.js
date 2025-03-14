@@ -3,7 +3,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React, { useRef } from "react";
-import Particles from "./Particles"; // Importing the Particles component
+
 
 export default function Services() {
   const carouselRef = useRef();
@@ -17,19 +17,7 @@ export default function Services() {
 
   return (
     <div className="relative w-full h-screen"> {/* Set height to full screen */}
-      {/* Particle Background */}
-      <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <Particles
-          particleColors={["#ffffff", "#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
+      
 
       {/* Content */}
       <div className="relative py-2 p-5">
