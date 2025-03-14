@@ -23,7 +23,7 @@ export default function App() {
         </div>
         <div id="services" >
 
-          <div>
+          <div className="bg-[#0000]">
             <Particles
               particleColors={['#ffffff', '#ffffff']}
               particleCount={200}
