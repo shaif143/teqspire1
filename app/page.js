@@ -21,7 +21,7 @@ export default function App() {
         <div id="projects">
           <Project />
         </div>
-        <div id="services" className="bg-[#FFFF]">
+        <div id="services" >
           
           <Particles
             particleColors={['#ffffff', '#ffffff']}
@@ -32,6 +32,7 @@ export default function App() {
             moveParticlesOnHover={true}
             alphaParticles={false}
             disableRotation={false}
+            
           />
           <Services />
         
