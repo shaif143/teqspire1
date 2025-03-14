@@ -20,7 +20,7 @@ export default function App() {
         <div id="projects">
           <Project />
         </div>
-        <div id="services" className="bg-[#FFFF]">
+        <div id="services" >
           <Services />
         </div>
         <div id="about">
