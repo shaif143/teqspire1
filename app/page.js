@@ -6,7 +6,7 @@ import About from "./components/about";
 import Faq from "./components/faq";
 import Pricing from "./components/pricing";
 import Footer from "./components/footer";
-import Particles from "./components/Particles";
+
 
 export default function App() {
   return (
@@ -21,23 +21,9 @@ export default function App() {
         <div id="projects">
           <Project />
         </div>
-        <div id="services" className="bg-black">
 
-          <div className="bg-[#0000]">
-            <Particles
-              particleColors={['#ffffff', '#ffffff']}
-              particleCount={200}
-              particleSpread={10}
-              speed={0.1}
-              particleBaseSize={100}
-              moveParticlesOnHover={true}
-              alphaParticles={false}
-              disableRotation={false}
-            />
+        <div id="services" className="bg-black">
             <Services />
-          </div>
-          
-        
         </div> 
         
 

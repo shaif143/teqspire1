@@ -3,6 +3,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React, { useRef } from "react";
+import Particles from "./Particles";
 
 
 export default function Services() {
@@ -17,8 +18,18 @@ export default function Services() {
 
   return (
     <div className="relative w-full h-screen"> {/* Set height to full screen */}
-      
-      {/* Content */}
+      <div>
+            <Particles
+              particleColors={['#ffffff', '#ffffff']}
+              particleCount={200}
+              particleSpread={10}
+              speed={0.1}
+              particleBaseSize={100}
+              moveParticlesOnHover={true}
+              alphaParticles={false}
+              disableRotation={false}
+            />    
+  
       <div className="relative py-2 p-5">
         <div className="py-6">
           <h1 className="font-inter font-semibold text-center text-[40px] text-[#183883]">
@@ -83,6 +94,7 @@ export default function Services() {
             </svg>
           </button>
         </div>
+      </div>
       </div>
     </div>
   );
