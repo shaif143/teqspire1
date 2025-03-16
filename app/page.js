@@ -22,13 +22,10 @@ export default function App() {
           <Project />
         </div>
 
-        <div id="services" className="bg-black">
+        <div id="services">
             <Services />
         </div> 
         
-
-        
-
         <div id="about">
           <About />
         </div>
