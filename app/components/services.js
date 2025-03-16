@@ -17,11 +17,11 @@ export default function Services() {
   };
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full min-h-screen bg-[#E3EFF4]"> 
   {/* Particle Background */}
-  <div className="absolute top-0 left-0 w-full h-full -z-10">
+  <div className="absolute inset-0 -z-10">
     <Particles
-      particleColors={['#ffffff', '#ffffff']}
+      particleColors={['#ffffff', '#183883']}
       particleCount={200}
       particleSpread={10}
       speed={0.1}
@@ -33,7 +33,7 @@ export default function Services() {
   </div>
 
   {/* Services Section */}
-  <div className="relative py-2 p-5 z-10"> {/* Add z-10 to bring it above particles */}
+  <div className="relative py-2 p-5 z-10">
     <div className="py-6">
       <h1 className="font-inter font-semibold text-center text-[40px] text-[#183883]">
         Services
@@ -59,7 +59,7 @@ export default function Services() {
         { img: "/client.png", title: "Client Identification", desc: "Identify Clients Strategically." },
         { img: "/meet.png", title: "Meet & Greet Arrangements", desc: "Facilitate virtual/in-person meetings." },
       ].map((service, index) => (
-        <div key={index} className="w-[330px] md:w-[306px] h-[350px] bg-[#e3eff4] flex flex-col items-center rounded-lg shadow-lg">
+        <div key={index} className="w-[330px] md:w-[306px] h-[350px] bg-white flex flex-col items-center rounded-lg shadow-lg">
           <img src={service.img} alt="" className="w-[350px] h-[230px]" />
           <div className="w-[57px] h-0 border-t-4 border-[#BD1F17] mt-2"></div>
           <div className="flex flex-col items-center py-4">
@@ -94,6 +94,7 @@ export default function Services() {
     </div>
   </div>
 </div>
+
 
   );
 }
