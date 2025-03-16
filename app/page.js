@@ -7,38 +7,47 @@ import Faq from "./components/faq";
 import Pricing from "./components/pricing";
 import Footer from "./components/footer";
 
-
 export default function App() {
   return (
-    <>
-      <div className="bg-[#e3eff4] text-black">
-        <div className="sticky top-0 z-50">
-          <NavBar></NavBar>
-        </div>
+    <div className="bg-[#e3eff4] text-black">
+      {/* Sticky Navbar with Spacing Fix */}
+      <div className="sticky top-0 z-50">
+        <NavBar />
+      </div>
+
+      {/* Prevent Overlapping */}
+      <div className="pt-[80px]">
         <div id="home">
           <Home />
         </div>
+
         <div id="projects">
           <Project />
         </div>
 
-        <div id="services">
-            <Services />
-        </div> 
-        
+        {/* Ensure Services Section is Positioned Correctly */}
+        <div id="services" className="relative min-h-screen">
+          <Services />
+        </div>
+
         <div id="about">
           <About />
         </div>
-        <div id="faq" className="bg-[#FFFF]">
+
+        {/* Fix White Background */}
+        <div id="faq" className="bg-white">
           <Faq />
         </div>
+
         <div id="pricing">
           <Pricing />
         </div>
-        <div className="bg-[#FFFF] text-black">
+
+        {/* Fix White Background */}
+        <div className="bg-white text-black">
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 }
