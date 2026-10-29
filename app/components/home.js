@@ -1,8 +1,7 @@
 "use client";
 
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import React, { useRef } from "react";
+import React from "react";
 
 export default function Home() {
   return (
@@ -29,8 +28,8 @@ export default function Home() {
             <div className="max-w-[1000px]">
               <h1 className="mb-5 text-5xl font-bold text-[#FFFF] font-quan">TEQSPIRE</h1>
               <p className="mb-5 text-[#FFFF] md:text-2xl text-[20px] font-raleway font-semibold">
-              We are dedicated to delivering tailored solutions that meet your unique requirements through our expertise. 
-              Our core competencies include Web Development, Maintenance Support, AI Integration, client and partner identification, and meet and greet arrangements. 
+              We are dedicated to delivering tailored solutions that meet your unique requirements through our expertise.
+              Our core competencies include Web Development, Maintenance Support, AI Integration, client and partner identification, and meet and greet arrangements.
               Partner with us to leverage cutting-edge technologies and drive innovation in your business.
               </p>
               <button className="btn btn-primary bg-[#1989CE] text-[#FFFF] hover:bg-[#183883] text-[18px]">Get Started</button>
